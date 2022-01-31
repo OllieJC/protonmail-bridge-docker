@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  protonmail-bridge:
+    image: ghcr.io/olliejc/protonmail-bridge-docker:1.8.12
+    ports:
+       - 29143:143
+       - 29025:25
+    volumes:
+       - protonmail-bridge-config:/root/.config
+       - protonmail-bridge-gnupg:/root/.gnupg
+       - protonmail-bridge-pass:/root/.password-store
+
+volumes:
+  protonmail-bridge-config:
+  protonmail-bridge-gnupg:
+  protonmail-bridge-pass:
