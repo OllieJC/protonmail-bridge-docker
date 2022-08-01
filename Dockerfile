@@ -13,7 +13,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update && \
     apt-get install -y wget bash nano pass socat && \
     cd /root && \
-    wget https://protonmail.com/download/bridge/protonmail-bridge_1.8.12-1_amd64.deb && \
+    wget https://proton.me/download/bridge/protonmail-bridge_2.2.2-1_amd64.deb && \
     apt install -y -f ./*.deb && \
     rm *.deb
 
