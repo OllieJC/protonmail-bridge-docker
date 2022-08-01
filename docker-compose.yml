@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   protonmail-bridge:
-    image: ghcr.io/olliejc/protonmail-bridge-docker:1.8.12
+    image: ghcr.io/olliejc/protonmail-bridge-docker:2.2.2
     ports:
        - 29143:143
        - 29025:25
